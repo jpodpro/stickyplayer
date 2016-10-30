@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#" debug="true">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <title>StickyPlayer Demo</title>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+
+    <!-- CrossPlayer -->
+    <script src="https://cdn.rawgit.com/jpodpro/crossplayer/master/dist/crossplayer.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- StickyPlayer -->
+    <script src="../dist/stickyplayer.js"></script>
+    <link href="../dist/stickyplayer.css" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="observe">
+    <a class="sp-play-button" stream-link="https://soundcloud.com/swingsetsounds/al-green-love-happiness-jpod-remix" title="Al Green - Love & Happiness (JPOD remix)" artwork="images/love-happiness.jpg">
+        <img src="images/love-happiness.jpg">
+    </a>
+    <a class="sp-play-button" stream-link="https://www.youtube.com/watch?v=23idtAQna00" title="JPOD - BlissCoast vol 6: Cape & Kalimba" artwork="images/cape-kalimba.jpg">
+        <img src="images/cape-kalimba.jpg">
+    </a>
+    <a class="sp-play-button" stream-link="https://dl.dropboxusercontent.com/u/1877499/jpod-ring-my-bell-demo.mp3" title="JPOD - Ring My Bell" artwork="images/ring-my-bell.jpg">
+        <img src="images/ring-my-bell.jpg">
+    </a>
+    <a class="sp-play-button" stream-link="http://jpodtbc.com/music/dont-worry-jpod-remix-demo.mp3" title="Bobby McFerrin - Don't Worry (JPOD remix)" artwork="images/dont-worry.jpg">
+        <img src="images/dont-worry.jpg">
+    </a>
+</div>
+
+<div id="sticky-player"></div>
+
+<script type="text/javascript">
+    var player = new StickyPlayer( {
+        playerId: 'sticky-player',
+        observeElementId: 'observe',
+        playButtonClass: 'sp-play-button'
+    } );
+</script>
+
+
+</body>
+</html>

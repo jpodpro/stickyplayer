@@ -1,0 +1,35 @@
+{
+    "name": "StickyPlayer",
+    "version": "0.1.0",
+    "description": "Sticky JavaScript audio player designed for SoundCloud, YouTube, DropBox and direct web links.",
+    "main": "dist/stickyplayer.js",
+    "keywords": [
+        "player",
+        "music",
+        "audio",
+        "soundcloud",
+        "youtube",
+        "dropbox",
+        "mp3",
+        "mobile",
+        "sticky"
+    ],
+    "author": {
+        "name": "Jason Danielson"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/jpodpro/stickyplayer.git"
+    },
+    "license": "MIT",
+    "devDependencies":
+    {
+        "grunt" : "*",
+        "grunt-contrib-concat" : "*",
+        "grunt-contrib-uglify" : "*",
+        "grunt-contrib-cssmin" : "*",
+        "grunt-contrib-copy" : "*",
+        "grunt-contrib-sass" : "*",
+        "grunt-contrib-watch" : "*"
+    }
+}
