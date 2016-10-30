@@ -91,8 +91,11 @@ var player = new StickyPlayer( {
 Any DOM element can be a player button as long as it contains four required attributes:
 
 1) Play button class, as specified in options.
+
 2) `stream-link` attribute which contains the URL to be streamed.
+
 3) `title` the title of the track to display in the player.
+
 4) `artwork` a link to the artwork to display in the player. Note: YouTube links don't use this as it shows the video in place of the artwork.
 
 ## iOS Limitations
